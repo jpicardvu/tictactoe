@@ -7,8 +7,8 @@ const tictactoe = (() => {
   for (i = 0; i < gridSize; i++) {
     board.push('')
     const gridButton = document.createElement('button');
-    gridButton.id = 'grid-square-' + i;
-    gridButton.classList.add('grid-square-all');
+    gridButton.id = 'grid-button-' + i;
+    gridButton.classList.add('grid-button-all');
     gridButton.onclick = () => {
       const gridPosition = gridButton.id.slice(12)
       if (this.shape === 'X') {
@@ -19,6 +19,7 @@ const tictactoe = (() => {
         this.shape = 'X';
         board[gridPosition] = this.shape;
       }
+      gridButton.innerText = board[gridPosition];
     }
     grid.appendChild(gridButton);
   }
@@ -28,7 +29,3 @@ const tictactoe = (() => {
 const Player = (name, score, shape) => {
   return {name, score, shape};
 }
-
-
-
-
