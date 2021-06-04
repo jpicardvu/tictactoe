@@ -1,0 +1,136 @@
+html {
+  font-size: 20px;
+  background-color: aliceblue;
+  color: navy;
+  font-family: monospace;
+  letter-spacing: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  margin: auto;
+  text-align: center;
+  width: 600px;
+}
+
+#screen-container {
+  height: 60px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 8px;
+  background-color:rgb(122, 122, 122);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 0 2px black;
+  margin-top: 10px;
+}
+
+#screen-container > #screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  border: 5px solid rgba(128, 128, 128, 0.514);
+  height: 50px;
+  margin: 5px 5px 5px 5px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px black;
+  padding-right: 1%;
+}
+
+#screen > #screen-content {
+  align-self: flex-end;
+  font-size: 25px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 240px;
+  width: 300px;
+  align-content: flex-start;
+  margin: 0 auto;
+  padding: 8px;
+  background-color:rgb(122, 122, 122);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 0 2px black;
+  margin-top: 2px;
+}
+
+#button-container > .number-buttons {
+  box-sizing: border-box;
+  border: 3px solid rgba(128, 128, 128, 0.514);
+  width: 50px;
+  height: 50px;
+  outline-style:solid;
+  outline-width: 2px;
+  outline-color: black;
+  margin: 5px 5px 5px 5px;
+  font-size: 17px;
+} #button-container > .number-buttons:active {
+  border: 1px solid black;
+  opacity: 0.4;
+  transition: all 0.1s ease-out;
+}
+
+#button-container > .operator-buttons1 {
+  box-sizing: border-box;
+  border: 3px solid rgba(107, 107, 148, 0.575);
+  width: 50px;
+  height: 31.25px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: black;
+  margin: 4px 5px 4px 5px;
+  background-color: rgb(42, 42, 71);
+  color: white;
+  font-size: 17px;
+} #button-container > .operator-buttons1:active {
+  border: 1px solid black;
+  opacity: 0.4;
+  transition: all 0.1s ease-out;
+}
+
+#button-container > .operator-buttons2 {
+  box-sizing: border-box;
+  border: 3px solid rgba(107, 107, 148, 0.575);
+  width: 50px;
+  height: 75px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: black;
+  margin: 4px 5px 4px 5px;
+  background-color: rgb(42, 42, 71);
+  color: white;
+  font-size: 17px;
+} #button-container > .operator-buttons2:active {
+  border: 1px solid black;
+  opacity: 0.4;
+  transition: all 0.1s ease-out;
+}
+
+#button-container > .clear-buttons {
+  box-sizing: border-box;
+  border: 3px solid rgba(128, 128, 128, 0.514);
+  width: 50px;
+  height: 31.25px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: black;
+  margin: 4px 5px 4px 5px;
+  background-color: orange;
+  font-size: 17px;
+} #button-container > .clear-buttons:active {
+  border: 1px solid black;
+  opacity: 0.4;
+  transition: all 0.1s ease-out;
+}
