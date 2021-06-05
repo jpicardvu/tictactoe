@@ -16,7 +16,13 @@ body {
   transform: translateX(-50%);
   margin: auto;
   text-align: center;
-  width: 600px;
+  width: 950px;
+}
+
+header {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .grid {
@@ -47,5 +53,32 @@ body {
   height: 484px;
   width: 484px;
   margin: auto;
+}
+
+#player1-input {
+  margin-top: 24px;
+}
+
+.score {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align:start;
+  font-weight: bold;
+  width: 200px;
+}
+
+#player1-name, #player2-name {
+  font-weight: normal;
+}
+
+.buttons {
+  display: block;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color:turquoise;
+  color: white;
 }
 

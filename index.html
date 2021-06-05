@@ -6,12 +6,33 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header>PAGE HEADER</header>
+    <header>TIC-TAC-TOE</header>
 
     <div class="grid-border">
       <div class="grid"></div>
     </div>
+
+    <div class="score">
+      SCORE
+      <br>
+      <span id="player1-name">Player 1: </span>
+      <span>0</span>
+      <br>
+      <span id="player2-name">Player 2: </span>
+      <span>0</span>
+    </div>
+
+    <label for="player1"><b>X</b></label>
+    <input type="text" placeholder="Player 1" id="player1-input" name="player1-input" required>
+    <label for="player2"><b>O</b></label>
+    <input type="text" placeholder="Player 2" id="player2-input" name="player2-input" required>
     
+    <div class="buttons">
+      <button id="update-btn" class="btn">Update Names</button>
+      <button id="restart-btn" class="btn">Restart Game</button>
+    </div>
+
+
     <script src="scripts/main.js"></script>
   </body>
 
